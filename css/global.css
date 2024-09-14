@@ -1,0 +1,478 @@
+.line-1 {
+    &:hover {
+        >i {
+            color: #35BAF2;
+        }
+
+        &::before {
+            width: 100%;
+            top: 100%;
+            left: 0;
+        }
+
+        &::after {
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: flex;
+        width: 0;
+        height: 2px;
+        background-color: #35BAF2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .4s;
+    }
+
+    &::before {
+        content: '';
+        display: flex;
+        width: 0;
+        height: 2px;
+        background-color: #35BAF2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .4s;
+    }
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    background: #72849C;
+    color: white;
+    transition: .4s;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: #35BAF2;
+    }
+}
+
+.navbar1 {
+    >li {
+        color: #5C6572;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        padding: 12px 0;
+
+        >a {
+            &:hover {
+
+                color: #35BAF2;
+            }
+        }
+
+        >a {
+            width: fit-content;
+            height: fit-content;
+
+            &:hover {
+
+                &::before {
+                    width: 100%;
+                    top: 100%;
+                    left: 0;
+                }
+
+                &::after {
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: flex;
+                width: 0px;
+                height: 2px;
+                background-color: #35BAF2;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transition: .4s;
+            }
+
+            &::before {
+                content: '';
+                display: flex;
+                width: 0;
+                height: 2px;
+                background-color: #35BAF2;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transition: .4s;
+            }
+        }
+    }
+}
+
+.btn1 {
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.slid {
+    background-image: linear-gradient(to right bottom, #192a3e, #192a3f, #1a2b3f, #1a2b40, #1b2b40, #1d293d, #1f283b, #202638, #212332, #21202d, #201d27, #1e1b22);
+    animation: anime1 forwards alternate 1s;
+
+    >figure {
+        transform: translateX(100%);
+        animation: anime2 forwards alternate ease-in 1.2s 1s;
+    }
+}
+
+
+
+.glow {
+    animation: anime3 infinite alternate linear 30s;
+}
+
+.glow1 {
+    animation: anime4 infinite alternate linear 30s;
+}
+
+
+.tran {
+
+    transform: translateY(300%);
+    animation: anime5 forwards alternate linear 1s 1s;
+}
+
+.tran1 {
+
+    transform: translateY(300%);
+    animation: anime5 forwards alternate linear 1s 1.5s;
+}
+
+.tran2 {
+
+    transform: translateY(-300%);
+    animation: anime5 forwards alternate linear 1s 2s;
+}
+
+
+.watch {
+    animation: anime6 forwards alternate 2s ease;
+}
+
+.back-li {
+    height: auto;
+    background-image: url(../img/light_gradient_bg.jpg);
+    background-size: cover;
+}
+
+
+.ic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transition: 1s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+
+    &:hover {
+        background-color: gray;
+        animation: anime7 forwards alternate linear 1.3s;
+    }
+}
+
+.icv {
+    transform: translateY(-120%);
+    animation: anime8 forwards alternate linear 1s;
+}
+
+.icv1 {
+    transform: translateY(-120%);
+    animation: anime8 forwards alternate linear 1.4s;
+}
+
+.icv2 {
+    transform: translateY(-120%);
+    animation: anime8 forwards alternate linear 1.8s;
+}
+
+.bg1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/light_gradient_violet_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/smartphone_section_bg.jpg);
+}
+
+.bg3 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/timepiece_section_bg.jpg);
+}
+
+.watch {
+    animation: anime9 linear infinite alternate 5s;
+}
+
+.bgw {
+    transition: 1s;
+
+    >img {
+        transition: 1s;
+    }
+
+    &:hover {
+        >img {
+            &:nth-of-type(1) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(2) {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.bgg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/light_gradient_bands_bg.jpg);
+}
+
+.i-box {
+    height: 160px;
+    width: 160px;
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+
+    &:hover {
+        >a {
+            left: -40px;
+        }
+    }
+
+    >a {
+        position: absolute;
+        left: 40px;
+        text-decoration: none;
+        transition: 1.5s;
+        font-size: 30px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        padding-right: 30px;
+        color: black;
+
+        &:nth-of-type(1) {
+            bottom: 10px;
+        }
+
+        &:nth-of-type(2) {
+            bottom: 60px;
+        }
+
+        &:nth-of-type(3) {
+
+            bottom: 110px;
+        }
+    }
+
+    >div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &:first-of-type {
+            background-color: #76e6e69d;
+            border-radius: 60% 40% 57% 43% / 34% 59% 41% 66%;
+            animation: anime2 infinite alternate 2s;
+        }
+
+        &:last-of-type {
+            background-image: url(../img/photo_2024-07-26_17-14-32.jpg);
+            background-size: cover;
+            border-radius: 30% 70% 32% 68% / 54% 37% 63% 46%;
+            animation: anime1 infinite alternate 2s;
+        }
+
+    }
+}
+
+@keyframes anime1 {
+    to {
+        border-radius: 30% 70% 32% 68% / 54% 37% 63% 46%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+
+        border-radius: 52% 48% 49% 51% / 47% 52% 48% 53%;
+    }
+}
+
+
+@keyframes anime1 {
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anime2 {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes anime3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40% {
+        transform: translateX(-20px);
+    }
+
+    41% {
+        transform: translateX(-20px);
+    }
+
+    60% {
+        transform: translateY(20px);
+    }
+
+    61% {
+        transform: translateY(20px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    81% {
+        transform: translateX(20px);
+    }
+
+    99% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes anime4 {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(20px);
+    }
+
+    40% {
+        transform: translateX(20px);
+    }
+
+    41% {
+        transform: translateX(20px);
+    }
+
+    60% {
+        transform: translateY(-20px);
+    }
+
+    61% {
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    81% {
+        transform: translateX(-20px);
+    }
+
+    99% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+
+@keyframes anime5 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anime6 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anime7 {
+    to {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes anime8 {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anime9 {
+    from {
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
